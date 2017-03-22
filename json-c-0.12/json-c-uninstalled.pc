@@ -1,0 +1,11 @@
+prefix=
+exec_prefix=
+libdir=/home/damody/openwrt/openwrt/build_dir/target-mips_34kc_musl-1.1.16/json-c-0.12
+includedir=/home/damody/openwrt/openwrt/build_dir/target-mips_34kc_musl-1.1.16/json-c-0.12
+
+Name: json
+Description: JSON implementation in C
+Version: 0.12
+Requires:
+Libs:  -L/home/damody/openwrt/openwrt/build_dir/target-mips_34kc_musl-1.1.16/json-c-0.12 -ljson-c
+Cflags: -I/home/damody/openwrt/openwrt/build_dir/target-mips_34kc_musl-1.1.16/json-c-0.12

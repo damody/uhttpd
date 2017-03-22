@@ -1,0 +1,43 @@
+
+libubox.a: avl.o      base64.o  blobmsg.o       jshn.o         kvlist.o  runqueue.o   ulog.o   usock.o    ustream-fd.o  vlist.o avl-cmp.o  blob.o    blobmsg_json.o  json_script.o  md5.o     safe_list.o  uloop.o  ustream.o  utils.o
+	ar rcs libubox.a avl.o   base64.o  blobmsg.o   jshn.o    kvlist.o  runqueue.o   ulog.o    usock.o    ustream-fd.o  vlist.o avl-cmp.o  blob.o    blobmsg_json.o  json_script.o  md5.o     safe_list.o  uloop.o   ustream.o  utils.o
+
+
+avl.o: avl.c
+	gcc -c avl.c
+base64.o: base64.c
+	gcc -c base64.c
+blobmsg.o: blobmsg.c
+	gcc -c blobmsg.c
+jshn.o: jshn.c
+	gcc -c jshn.c -I./
+kvlist.o: kvlist.c
+	gcc -c kvlist.c
+runqueue.o: runqueue.c
+	gcc -c runqueue.c
+ulog.o: ulog.c
+	gcc -c ulog.c
+usock.o: usock.c
+	gcc -c usock.c
+ustream-fd.o: ustream-fd.c
+	gcc -c ustream-fd.c
+vlist.o: vlist.c
+	gcc -c vlist.c
+avl-cmp.o: avl-cmp.c
+	gcc -c avl-cmp.c
+blob.o: blob.c
+	gcc -c blob.c
+blobmsg_json.o: blobmsg_json.c
+	gcc -c blobmsg_json.c -I./
+json_script.o: json_script.c
+	gcc -c json_script.c
+md5.o: md5.c
+	gcc -c md5.c
+safe_list.o: safe_list.c
+	gcc -c safe_list.c
+uloop.o: uloop.c
+	gcc -c uloop.c
+ustream.o: ustream.c
+	gcc -c ustream.c
+utils.o: utils.c
+	gcc -c utils.c
